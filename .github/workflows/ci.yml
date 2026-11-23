@@ -39,6 +39,9 @@ jobs:
       - name: Lint with ruff
         run: ruff check --output-format=github .
 
+      - name: Type check with mypy
+        run: mypy .
+
       - name: Run tests
         run: pytest                                                                                
                                   
